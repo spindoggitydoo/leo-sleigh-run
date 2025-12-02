@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Leo's Sleigh Run</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=Nunito:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-shell">
+    <header class="hud">
+      <div class="logo">Leo's Sleigh Run</div>
+      <div class="hud-row">
+        <div class="hud-item">Score: <span id="score">0</span></div>
+        <div class="hud-item">Best: <span id="bestScore">0</span></div>
+      </div>
+    </header>
+    <main class="game-main">
+      <canvas id="gameCanvas"></canvas>
+      <div id="overlay" class="overlay">
+        <h1>Leo's sleigh run</h1>
+        <p>Jump over Christmas trees, duck under flying snowballs, and collect magnets to keep Santa's mag-lev sleigh charging.</p>
+        <button id="startButton">Tap to start</button>
+      </div>
+    </main>
+    <div class="merry-message">Merry Christmas Leo!</div>
+    <footer class="footer">
+      <p>On mobile: tap the top half to jump and the bottom half to duck. On desktop: ↑/space to jump, ↓ to duck.</p>
+    </footer>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
